@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
+import { IoClose } from "react-icons/io5";
 import logo from "../assets/LOGO.png";
 import { IoMenu } from "react-icons/io5";
 const Header = () => {
@@ -18,8 +19,14 @@ const Header = () => {
         <IoMenu />
       </button>
       {menu && (
-        <div className="bg-[#CBDAB0]/20 w-full h-screen fixed top-0 right-0">
-          <nav className="h-full">
+        <div className="bg-white w-full h-screen fixed top-0 right-0 z">
+          <nav className="h-full bg-[#CBDAB0]/20 z-10">
+            <span
+              className="absolute top-5 right-5"
+              onClick={() => setMenu(!menu)}
+            >
+              <IoClose className="text-5xl" />
+            </span>
             <ul className="font-medium text-lg flex flex-col justify-center items-center h-full gap-4">
               <li>
                 <Link

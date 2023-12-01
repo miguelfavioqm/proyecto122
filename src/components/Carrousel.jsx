@@ -2,7 +2,7 @@ import React from "react";
 import img from "../assets/madidiZ5.jpg";
 const Carrousel = () => {
   return (
-    <section className="md:h-[70vh] container p-0">
+    <section className="md:h-[70vh] container p-0 z-0">
       <div
         id="carouselExampleSlidesOnly"
         className="carousel slide"
