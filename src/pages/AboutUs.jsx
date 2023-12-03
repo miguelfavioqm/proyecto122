@@ -1,7 +1,11 @@
 import React from "react";
-
+import Header from "../components/Header";
 const AboutUs = () => {
-  return <div>AboutUs</div>;
+  return (
+    <>
+      <Header></Header>
+    </>
+  );
 };
 
 export default AboutUs;

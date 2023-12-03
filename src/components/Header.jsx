@@ -7,9 +7,9 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
   return (
     <header className="h-20 bg-[#CBDAB0]/20 flex items-center p-4 justify-between md:justify-normal">
-      <span className="w-1/5 flex md:items-center md:justify-center">
+      <Link to={".."} className="w-1/5 flex md:items-center md:justify-center">
         <img className="md:w-14 w-10" src={logo} alt="LOGO" />
-      </span>
+      </Link>
       <button
         onClick={() => {
           setMenu(!menu);
@@ -30,7 +30,8 @@ const Header = () => {
             <ul className="font-medium text-lg flex flex-col justify-center items-center h-full gap-4">
               <li>
                 <Link
-                  to={`nosotros`}
+                  to={`../nosotros`}
+                  relative="path"
                   onClick={() => setMenu(!menu)}
                   className="hover:underline"
                 >
@@ -39,7 +40,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to={`servicios`}
+                  to={`../servicios`}
                   onClick={() => setMenu(!menu)}
                   className="hover:underline"
                 >
@@ -48,7 +49,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to={`tours`}
+                  to={`../tours`}
                   onClick={() => setMenu(!menu)}
                   className="hover:underline"
                 >
@@ -57,7 +58,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to={`contacto`}
+                  to={`../contacto`}
                   onClick={() => setMenu(!menu)}
                   className="hover:underline"
                 >
@@ -83,7 +84,7 @@ const Header = () => {
           <ul className="flex items-center gap-4 font-medium text-lg">
             <li>
               <Link
-                to={`nosotros`}
+                to={`../nosotros`}
                 onClick={() => setMenu(!menu)}
                 className="hover:underline"
               >
@@ -93,7 +94,7 @@ const Header = () => {
             <div className="h-8 w-[1px] bg-black"></div>
             <li>
               <Link
-                to={`servicios`}
+                to={`../servicios`}
                 onClick={() => setMenu(!menu)}
                 className="hover:underline"
               >
@@ -103,7 +104,7 @@ const Header = () => {
             <div className="h-8 w-[1px] bg-black"></div>
             <li>
               <Link
-                to={`tours`}
+                to={`../tours`}
                 onClick={() => setMenu(!menu)}
                 className="hover:underline"
               >
@@ -113,7 +114,7 @@ const Header = () => {
             <div className="h-8 w-[1px] bg-black"></div>
             <li>
               <Link
-                to={`contacto`}
+                to={`../contacto`}
                 onClick={() => setMenu(!menu)}
                 className="hover:underline"
               >
