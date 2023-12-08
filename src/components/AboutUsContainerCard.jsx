@@ -6,7 +6,7 @@ import { IoTicketSharp } from "react-icons/io5";
 import { FaWallet } from "react-icons/fa";
 const AboutUsContainerCard = () => {
   return (
-    <section className="px-8 py-4 flex items-center justify-center gap-4">
+    <section className="px-8 py-4 flex items-center justify-center gap-4 flex-wrap">
       <div
         className="h-[80vh] w-full md:w-1/2 rounded-2xl p-1 justify-center flex flex-col"
         style={{
@@ -22,8 +22,8 @@ const AboutUsContainerCard = () => {
           numquam neque.
         </p>
       </div>
-      <div className="w-2/5 flex flex-col gap-2">
-        <div className="bg-[#3CCA8F] p-3 rounded-xl flex justify-around items-center ">
+      <div className="md:w-2/5 flex flex-col gap-2">
+        <div className="bg-[#3CCA8F] p-3 rounded-xl flex justify-around items-center w-full ">
           <span className="bg-white h-20 w-20 rounded-full p-2 flex items-center justify-center">
             <GiArchiveResearch className="text-5xl" />
           </span>
