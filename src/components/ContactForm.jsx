@@ -33,13 +33,28 @@ const ContactForm = () => {
           </ul>
           <ul className="flex gap-3 flex-col ">
             <li>
-              <input id="nombre" type="text" className="md:w-96 w-full" />
+              <input
+                id="nombre"
+                type="text"
+                className="md:w-96 w-full"
+                required
+              />
             </li>
             <li>
-              <input id="correo" type="email" className="md:w-96 w-full" />
+              <input
+                id="correo"
+                type="email"
+                className="md:w-96 w-full"
+                required
+              />
             </li>
             <li>
-              <input id="telefono" type="text" className="md:w-96 w-full" />
+              <input
+                id="telefono"
+                type="text"
+                className="md:w-96 w-full"
+                required
+              />
             </li>
             <li>
               <textarea
