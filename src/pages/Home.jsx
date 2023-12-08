@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Carrousel from "../components/Carrousel";
 import BestLocations from "../components/BestLocations";
+import BlogContainer from "../components/BlogContainer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Carrousel></Carrousel>
       <Navigation></Navigation>
       <BestLocations></BestLocations>
+      <BlogContainer></BlogContainer>
       <Footer></Footer>
     </>
   );

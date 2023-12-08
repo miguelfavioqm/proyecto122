@@ -7,7 +7,6 @@ import Contact from "./pages/Contact.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 import Services from "./pages/Services.jsx";
-import Tours from "./pages/Tours.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,10 +21,7 @@ const router = createBrowserRouter([
     path: "servicios",
     element: <Services />,
   },
-  {
-    path: "tours",
-    element: <Tours />,
-  },
+
   {
     path: "contacto",
     element: <Contact />,

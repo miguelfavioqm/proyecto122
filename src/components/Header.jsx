@@ -19,7 +19,7 @@ const Header = () => {
         <IoMenu />
       </button>
       {menu && (
-        <div className="bg-white w-full h-screen fixed top-0 right-0 z">
+        <div className="bg-white w-full h-screen fixed top-0 right-0 z-10">
           <nav className="h-full bg-[#CBDAB0]/20 z-10">
             <span
               className="absolute top-5 right-5"
@@ -48,13 +48,13 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to={`../tours`}
+                <a
+                  href="#BLOG"
                   onClick={() => setMenu(!menu)}
                   className="hover:underline"
                 >
                   TOURS
-                </Link>
+                </a>
               </li>
               <li>
                 <Link
@@ -83,41 +83,25 @@ const Header = () => {
         <nav>
           <ul className="flex items-center gap-4 font-medium text-lg">
             <li>
-              <Link
-                to={`../nosotros`}
-                onClick={() => setMenu(!menu)}
-                className="hover:underline"
-              >
+              <Link to={`../nosotros`} className="hover:underline">
                 NOSOTROS
               </Link>
             </li>
             <div className="h-8 w-[1px] bg-black"></div>
             <li>
-              <Link
-                to={`../servicios`}
-                onClick={() => setMenu(!menu)}
-                className="hover:underline"
-              >
+              <Link to={`../servicios`} className="hover:underline">
                 SERVICIOS
               </Link>
             </li>
             <div className="h-8 w-[1px] bg-black"></div>
             <li>
-              <Link
-                to={`../tours`}
-                onClick={() => setMenu(!menu)}
-                className="hover:underline"
-              >
+              <a href="#BLOG" className="hover:underline">
                 TOURS
-              </Link>
+              </a>
             </li>
             <div className="h-8 w-[1px] bg-black"></div>
             <li>
-              <Link
-                to={`../contacto`}
-                onClick={() => setMenu(!menu)}
-                className="hover:underline"
-              >
+              <Link to={`../contacto`} className="hover:underline">
                 CONTACTO
               </Link>
             </li>
